@@ -1,0 +1,20 @@
+body {
+    background-color: #eeede2e7;
+}
+
+.logo {
+    max-width: 80px;
+    display: block;
+    margin: auto;
+}
+
+.navigation {
+    text-align: center;
+    background-color: lightslategray);
+}
+.header {
+    background-color: #e29f6777;
+}
+.navigation a {
+    color: #4c7971;
+}
