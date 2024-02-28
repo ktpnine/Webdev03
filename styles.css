@@ -1,5 +1,6 @@
 body {
     background-color: #eeede2e7;
+    margin: 0px;
 }
 
 .logo {
@@ -10,11 +11,28 @@ body {
 
 .navigation {
     text-align: center;
-    background-color: lightslategray);
+    background-color: lightslategray;
 }
 .header {
     background-color: #e29f6777;
 }
 .navigation a {
     color: #4c7971;
+}
+.banner {
+    min-height: 50vh;
+    background-image: url("images/uran-wang-zu2dcPNpJ0o-unsplash.jpg");
+    /*to fit image inside banner box, use background-size: contain;*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 25vh;
+    color: cornsilk;
+    font-size: 7em;
+    text-shadow: 2px 0px 2px #333333;
+
 }
