@@ -36,10 +36,14 @@ body {
     text-shadow: 2px 0px 2px #333333;
 }
 
+.content {
+    max-width: 1000px;
+    margin: auto;
+}
 .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    card-grid
+    column-gap: 30px;
 }
 
 .card-image {
