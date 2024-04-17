@@ -2,21 +2,23 @@
 <html lang="en">
 
 <head>
-    <title>First Web Page</title>
+    <title>First Web</title>
     <meta name="viewport" content="width=device-width,intial-scale=1.0">
     <link rel="icon" href="tree-solid.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="main-header">
         <img class="logo"src="home-solid.png" alt="trash logo">
         <form id="search-form>"
             <input type="text" name="search-keywords" id="search">
-            <button type="submit">
+            <button type="submit">Search
                 <i class="fa-light fa-magnifying-glass"></i>>
             </button>
         </form>
@@ -28,8 +30,15 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <div class="banner">
+    <!- - <div class="banner">
         <h1>Welcome</h1>
+    </div> -->
+    <div class="front-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+        <div class="cell">One</div>
+        <div class="cell">Two</div> 
+        <div class="cell">Three</div> 
+        <div class="cell">Four</div> 
+        <div class="cell">Five</div> 
     </div>
     <main class="content">
         <h2>First website</h2>
@@ -47,7 +56,7 @@
             </div>
             <div class="card">
                 <img src="Products/louis-hansel-93ccfD84tCA-unsplash.jpg" class="card-image">
-                <h3>Nice Wine </h3>
+                <h3>Cool Wine </h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
@@ -63,7 +72,8 @@
                             but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
                             </p>
                             <button type="button" class="card-button">Add to cart</button>
-
+                    </div>
+            </div>
     </main>
     <footer>
         <p class="copyright">&copy; Kittipon 2024</p>

@@ -6,54 +6,55 @@
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     background-color: #eeede2e7;
+    color:var(--feldgrau);
     margin: 0px;
 }
 
 .logo {
-    max-width: 80px;
+    max-width: 90px;
     display: block;
-    margin: auto;
-}
-
-.navigation {
-    text-align: center;
-    background-color: var(--celeste)
-}
-.header {
-    background-color:var(--cool-gray);
+    /*margin: auto; */
 }
 .navigation {
     text-align: center;
-    display: flex;
-    flex-direction: row;
 }
 .navigation a {
-    color: var(--khaki);
+    color:var(--khaki);
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+}
+.navigation a:hover {
+    background-color:hsl(180, 10%, 75%);
 }
 .banner {
     min-height: 50vh;
     background-image: url("images/uran-wang-zu2dcPNpJ0o-unsplash.jpg");
     /*to fit image inside banner box, use background-size: contain;*/
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .banner h1 {
-    text-align: center;
-    margin: 0px;
-    padding: 25vh;
+    font-size: 3em;
+    font-weight: 800;
     color: cornsilk;
     font-size: 7em;
-    text-shadow: 2px 0px 2px #333333;
+    text-shadow: 1px 0px 1px #333333;
+    letter-spacing: 20px;
 }
-
+.banner h1:hover {
+    filter: blur (5px);
+}
 .main-header {
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: flex-end;
-    flex-wrap:wrap ;
 }
 #search-form {
     display: flex;
@@ -73,6 +74,7 @@ body {
     max-width: 1000px;
     margin: auto;
 }
+
 .card-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -86,5 +88,40 @@ body {
     object-fit :cover;
     object-position : center;
     border-radius :10px;
-
+}
+.front-carousel {
+    min-width: 100%;
+    min-height: 50vh;
+    background-color:var(--feldgrau) ;
+}
+.cell {
+    width: 100%;
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+}
+.cell:nth-child(1) {
+    background-color: aquamarine;
+    background-image: url("carousel/matthieu-joannon-6ciLddToTgM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 4em;
+}
+.cell:nth-child(2) {
+    background-color:azure;
+    background-image: url("carousel/chelsea-pridham-MMOXoxE_Gj0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 4em;
+}
+.cell:nth-child(3) {
+    background-color:bisque;
+}
+.cell:nth-child(4) {
+    background-color:darkred;
+}
+.cell:nth-child(5) {
+    background-color:palegoldenrod;
 }
