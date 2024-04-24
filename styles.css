@@ -1,12 +1,13 @@
 :root {
     --celeste: hsla(178, 100%, 89%, 1);
---non-photo-blue: hsla(188, 65%, 72%, 1);
---cool-gray: hsla(240, 18%, 61%, 1);
---feldgrau: hsla(160, 11%, 36%, 1);
+    --non-photo-blue: hsla(188, 65%, 72%, 1);
+    --cool-gray: hsla(240, 18%, 61%, 1);
+    --feldgrau: hsla(160, 11%, 36%, 1);
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: Roboto, sans-serif;
     background-color: #eeede2e7;
     color:var(--feldgrau);
     margin: 0px;
@@ -17,18 +18,24 @@ body {
     display: block;
     /*margin: auto; */
 }
+
 .navigation {
     text-align: center;
+    display: flex;
+    flex-direction: row;
 }
+
 .navigation a {
     color:var(--khaki);
     text-decoration: none;
-    padding: 20px 10px;
+    padding: 50px 10px;
     display: inline-block;
 }
+
 .navigation a:hover {
     background-color:hsl(180, 10%, 75%);
 }
+
 .banner {
     min-height: 50vh;
     background-image: url("images/uran-wang-zu2dcPNpJ0o-unsplash.jpg");
@@ -39,23 +46,27 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .banner h1 {
     font-size: 3em;
     font-weight: 800;
     color: cornsilk;
-    font-size: 7em;
     text-shadow: 1px 0px 1px #333333;
     letter-spacing: 20px;
 }
+
 .banner h1:hover {
     filter: blur (5px);
 }
+
 .main-header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
+
 #search-form {
     display: flex;
     flex-direction: row;
@@ -64,6 +75,7 @@ body {
 #search-form input {
     border: 1px solid #cccccc;
     padding: 0.5em;
+    flex: 1;
 
 }
 #search-form button {
@@ -85,15 +97,16 @@ body {
     max-width: 100%;
     display: block;
     aspect-ratio: 3/4;
-    object-fit :cover;
-    object-position : center;
-    border-radius :10px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
 }
 .front-carousel {
     min-width: 100%;
     min-height: 50vh;
-    background-color:var(--feldgrau) ;
+    background-color: var(--feldgrau);
 }
+
 .cell {
     width: 100%;
     min-height: 50vh;
@@ -102,26 +115,56 @@ body {
 }
 .cell:nth-child(1) {
     background-color: aquamarine;
-    background-image: url("carousel/matthieu-joannon-6ciLddToTgM-unsplash.jpg");
+    background-image: url("carousel/becky-fantham-1z9O2_4nxa8-unsplash.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
     color: white;
     font-size: 4em;
 }
 .cell:nth-child(2) {
-    background-color:azure;
-    background-image: url("carousel/chelsea-pridham-MMOXoxE_Gj0-unsplash.jpg");
+    background-color: azure;
+    background-image: url("carousel/michael-wave-gVkAiPchYhY-unsplash.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
+    background-repeat: no-repeat;
     color: white;
     font-size: 4em;
 }
 .cell:nth-child(3) {
     background-color:bisque;
+    background-image: url("carousel/kelsey-knight-udj2tD3WKsY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
 }
 .cell:nth-child(4) {
     background-color:darkred;
+    background-image: url("carousel/kelsey-chance-tAH2cA_BL5g-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
 }
 .cell:nth-child(5) {
     background-color:palegoldenrod;
+    background-image: url("carousel/karsten-wurth-49aQgxkOrO4-unsplash.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4em;
+}
+
+.nav-button {
+    font-size: 32px;
+    background-color: transparent;
+    align-self: center;
+    border: solid transparent;
+    color: var(--cool-gray);
+    display: none;
+
 }
