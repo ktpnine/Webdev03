@@ -4,13 +4,13 @@ function onPageLoad() {
     const Menu = document.querySelector(".navigation");
 
     Button.addEventListener("click", function() {
-        if(Menubar.classList.contains("open") ) {
-           Menu.classList.remove("open");
+        if( Menu.classList.contains("open") ) {
+            Menu.classList.remove("open");
         }
         else {
-        Menu.classList.add("open");
+            Menu.classList.add("open");
         }
     } )
 }
 
-window.addEventListener("load", onPageLoad)
+window.addEventListener("load", onPageLoad )
